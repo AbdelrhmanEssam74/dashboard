@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Framework css -->
+  <link rel="stylesheet" href="css/framework.css" />
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Reader all elements normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font awesome library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- up button -->
+  <i class="fa-solid fa-circle-arrow-up up"></i>
+  </div>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20">
+      <h3 class="p-relative t-center mt-0">Dashboard</h3>
+      <ul>
+        <li>
+          <a class="active d-flex align-center fs-15 color-black rad-6 p-10" href="index.html" title="Dashboard">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Settings">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Profile">
+            <i class="fa-regular fa-user"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Projects">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Courses">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Friends">
+            <i class="fa-solid fa-user-group"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Files">
+            <i class="fa-regular fa-file"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-15 color-black rad-6 p-10" href="" title="Plans">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="cotent w-full">
+      <!-- start head -->
+      <div class="head bg-white p-10 flex-center-between">
+        <div class="search p-relative">
+          <input type="search" placeholder="Search" class="rad-10 p-10 border-1" />
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notifications p-relative" data-count="3">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <div class="card notification-menu">
+            <div class="p-10 loadding">
+              <div class="shimmerBG title-line end"></div>
+              <div class="shimmerBG title-line"></div>
+            </div>
+            <div class="p-10 loadding">
+              <div class="shimmerBG title-line end"></div>
+              <div class="shimmerBG title-line"></div>
+            </div>
+            <div class="p-10 loadding">
+              <div class="shimmerBG title-line end"></div>
+              <div class="shimmerBG title-line"></div>
+            </div>
+          </div>
+          <img src="imgs/avatar.jpg" alt="" />
+        </div>
+      </div>
+      <!-- end head -->
+      <h1 class="p-relative">Dashboard</h1>
+      <div class="wrapper d-grid gap-20">
+        <!--start Welcome widget -->
+        <div class="welcome bg-white rad-10 t-center-moble block-mobile">
+          <div class="intro p-20 d-flex justify-between bg-eee">
+            <div>
+              <h2 class="m-0">Welcome</h2>
+              <p class="color-gray mt-5">user</p>
+            </div>
+            <img class="hide-mobile" src="imgs/welcome-01.png" alt="" />
+          </div>
+          <img src="imgs/avatar.jpg" alt="" class="avatar" />
+          <div class="body t-center d-flex p-20 mt-20 mb-20 block-mobile">
+            <div>
+              Full name
+              <span class="d-block color-gray fs-15 mt-10">User user</span>
+            </div>
+            <div>
+              80 <span class="d-block color-gray fs-15 mt-10">Projects</span>
+            </div>
+            <div>
+              $8500 <span class="d-block color-gray fs-15 mt-10">Earned</span>
+            </div>
+          </div>
+          <a href="profile.html" class="visite d-block fs-15 rad-6 bg-blue color-white w-fit btn-shape">Profile</a>
+        </div>
+        <!--end Welcome widget -->
+        <!--start draft widget -->
+        <div class="quick-draft p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Quick Draft</h2>
+          <p class="mt-0 mb-20 fs-15 color-gray">
+            Write A Draft For Your Idea
+          </p>
+          <form action="">
+            <input type="text" class="d-block w-full border-none p-10 bg-eee rad-6 mb-20" placeholder="Title" />
+            <textarea class="d-block w-full border-none p-10 bg-eee rad-6 mb-20" placeholder="Your Thought"></textarea>
+            <input class="save d-block color-white bg-blue fs-15 border-none w-fit btn-shape" type="submit"
+              value="Save" />
+          </form>
+        </div>
+        <!--end draft widget -->
+        <!-- Start target -->
+        <div class="target p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Targets</h2>
+          <p class="mt-0 mb-20 color-gray fs-15">Targets Of The Year</p>
+          <div class="target-row mb-20 blue d-flex align-center">
+            <div class="icon flex-center">
+              <i class="fa-solid fa-dollar-sign fa-lg color-blue"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14">Money</span>
+              <span class="d-block mt-5 mb-10 fw-bold">$20,000</span>
+              <div class="progress p-relative">
+                <span class="bg-blue blue" style="width: 80%">
+                  <span class="bg-blue">80%</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 orange d-flex align-center">
+            <div class="icon flex-center">
+              <i class="fa-solid fa-code fa-lg color-orange"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14">Projects</span>
+              <span class="d-block mt-5 mb-10 fw-bold">30</span>
+              <div class="progress p-relative">
+                <span class="bg-orange orange" style="width: 60%">
+                  <span class="bg-orange">60%</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="target-row mb-20 green d-flex align-center">
+            <div class="icon flex-center">
+              <i class="fa-solid fa-user fa-lg color-green"></i>
+            </div>
+            <div class="details">
+              <span class="fs-14">clients</span>
+              <span class="d-block mt-5 mb-10 fw-bold">40</span>
+              <div class="progress p-relative">
+                <span class="bg-green green" style="width: 70%">
+                  <span class="bg-green">70%</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end target -->
+        <!-- Start Tickets -->
+        <div class="tickets p-20 bg-white rad-10">
+          <h2 class="mt-0 mb-10">Tickets Statistics</h2>
+          <p class="mt-0 mb-20 color-gray fs-15">
+            EveryThing About Support Tickets
+          </p>
+          <div class="d-flex t-center gap-20 flex-wrap">
+            <div class="box p-20 rad-10 fs-13 color-gray">
+              <i class="fa-regular fa-rectangle-list fa-2x color-orange mb-10"></i>
+              <span class="d-block fw-bold color-black fs-25 mb-5">2500</span>
+              Total
+            </div>
+            <div class="box p-20 rad-10 fs-13 color-gray">
+              <i class="fa-solid fa-spinner fa-2x color-orange mb-10"></i>
+              <span class="d-block fw-bold color-black fs-25 mb-5">500</span>
+              Pending
+            </div>
+            <div class="box p-20 rad-10 fs-13 color-gray">
+              <i class="fa-regular fa-circle-check fa-2x color-orange mb-10"></i>
+              <span class="d-block fw-bold color-black fs-25 mb-5">1500</span>
+              Closed
+            </div>
+            <div class="box p-20 rad-10 fs-13 color-gray">
+              <i class="fa-regular fa-rectangle-xmark fa-2x color-orange mb-10"></i>
+              <span class="d-block fw-bold color-black fs-25 mb-5">200</span>
+              Deleted
+            </div>
+          </div>
+        </div>
+        <!-- End Tickets -->
+        <!-- Start lates News -->
+        <div class="latest-news p-20 bg-white rad-10 t-center-moble">
+          <h2 class="m-0 mb-10">Lates News</h2>
+          <div class="news-row d-flex align-center block-mobile p-10">
+            <img src="imgs/news_1.jpg" alt="news_1">
+            <div class="info">
+              <h4>Create SASS Section</h4>
+              <p class="mt-0 mb-20 color-gray fs-15">New SASS Example</p>
+            </div>
+            <div class="btn-shape bg-eee fs-12 label">3 days ago</div>
+          </div>
+          <div class="news-row d-flex align-center block-mobile p-10">
+            <img src="imgs/news_2.jpg" alt="news_2">
+            <div class="info">
+              <h4>Change The Design</h4>
+              <p class="mt-0 mb-20 color-gray fs-15">A Brand New Website Design</p>
+            </div>
+            <div class="btn-shape bg-eee fs-12 label">4 days ago</div>
+          </div>
+          <div class="news-row d-flex align-center block-mobile p-10">
+            <img src="imgs/news_3.jpg" alt="news_3">
+            <div class="info">
+              <h4>Team Increased</h4>
+              <p class="mt-0 mb-20 color-gray fs-15">3 Developers Joined The Team</p>
+            </div>
+            <div class="btn-shape bg-eee fs-12 label">5 days ago</div>
+          </div>
+          <div class="news-row d-flex align-center block-mobile p-10">
+            <img src="imgs/news_4.jpg" alt="news_4">
+            <div class="info">
+              <h4>Added Payment Gateway</h4>
+              <p class="mt-0 mb-20 color-gray fs-15">Many New Payment Gateways Added</p>
+            </div>
+            <div class="btn-shape bg-eee fs-12 label">6 days ago</div>
+          </div>
+        </div>
+        <!-- End lates News -->
+
+
+      </div>
+    </div>
+    <!-- model -->
+    <div class="model p-fixed p-15 d-flex align-center justify-center m-">
+      <div class="close-model bg-eee p-10 rad-6 cursor-pointer" title="close"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+  </div>
+  <!-- External js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
